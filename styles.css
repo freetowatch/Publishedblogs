@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .trending-container {
+    max-width: 1000px;
+    margin: 10 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    top: 011px;
+    transform: translate(110px, 10px);
+  }
+
+  .trending {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .trending p a {
+    text-decoration: none;
+    color: #333;
+
+  }
+
+  .trending p a:hover {
+    color: #007BFF;
+  }
+
+  .pre {
+    text-decoration: none;
+  }
+
+.trending-container {
+  position: relative;
+  cursor: pointer;
+}
+
+#dropdown-content {
+  display:none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  z-index: 1;
+}
