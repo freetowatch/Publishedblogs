@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latest Blogs</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .trending-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .trending {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <h1><span style="color: green;"> 
-        Latest</span>Blogs</h1>
-        <hr> 
-        <div class="trending-container" onclick="toggleDropdown()">
-          <div class="trending">
-            <p style="font-size: 25px;">1 &nbsp;&nbsp;
-                Oladips: Nigerian rapper dies aged 28 <br>
-                 <pre>           Oladips: Nigerian rapper dies aged 28</pre>
-                <div class="pre" id="dropdown-content">
-                    <pre> <a href="https://sites.google.com/view/publishedblogs/home" target="_blank">               Oladips: Nigerian rapper dies aged 28 <br>                    BBC News</a></pre> 
-                </div></p>
-          </div>
-          
-          <script src="script.js"></script>
-          
-    <div id="dailytrends"></div>
+    <h1><span style="color: green;">Seven</span> Blogs</h1>
+    <hr>
+    <div class="trending-container" onclick="toggleDropdown()">
+        <div class="trending">
+            <p>
+                <strong>1.</strong> Oladips: Nigerian rapper dies aged 28 <br>
+                Oladips, a prominent Nigerian rapper, passed away at the age of 28.
+            </p>
+            <div class="pre" id="dropdown-content">
+                <p>
+                    <a href="https://ouo.io/rlUkSLN" target="_blank">
+                        Read more on BBC News
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <!-- Include the Google Trends embed script -->
-    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3523_RC02/embed_loader.js"></script>
-    
-    <!-- Render the Google Trends widget -->
-    <script type="text/javascript">
-        trends.embed.renderWidget("dailytrends", "", {"geo":"NG","guestPath":"https://trends.google.com:443/trends/embed/"});
-    </script>
+    <script src="script.js"></script>
 </body>
-</html>
 
-    </body>
 </html>
