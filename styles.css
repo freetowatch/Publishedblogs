@@ -1,46 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-
-  .trending-container {
-    max-width: 1000px;
-    margin: 10 auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    top: 011px;
-    transform: translate(110px, 10px);
-  }
-
-  .trending {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #fff;
-  }
-
-  .trending p a {
-    text-decoration: none;
-    color: #333;
-
-  }
-
-  .trending p a:hover {
-    color: #007BFF;
-  }
-
-  .pre a{
-    text-decoration: none;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
 
 .trending-container {
+  max-width: 1000px;
+  margin: 10px auto; /* Adjusted the margin property */
+  padding: 20px;
+  margin-bottom: 20px;
+  top: 11px; /* Removed leading zero */
+  transform: translate(10px, 10px); /* Adjusted the values */
   position: relative;
   cursor: pointer;
 }
 
+.trending {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.trending p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.trending p a:hover {
+  color: #007BFF;
+}
+
+.pre a {
+  text-decoration: none;
+}
+
 #dropdown-content {
-  display:none;
+  display: none;
   background-color: #f9f9f9;
   padding: 10px;
   z-index: 1;
